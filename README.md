@@ -8,7 +8,11 @@
 2. 필요한 패키지 설치requirements.txt에 명시된 모든 의존성을 설치합니다.Bashpip install -r requirements.txt
 
 ### 📄 애플리케이션 목록 및 기능
-프로젝트는 다음 세 가지 주요 스크립트로 구성되어 있습니다.파일 이름주요 기능사용 MediaPipe 모듈hand_detector.py실시간 손 랜드마크 (21개) 감지 및 추적mp.solutions.handsface_detector.py실시간 얼굴 메쉬 (468개 랜드마크) 감지 및 시각화mp.solutions.face_meshselfie_segmentation.py인물 전경/배경 분리 및 배경 블러(Blur) 처리mp.solutions.selfie_segmentation
+| 파일 이름 | 주요 기능 | 사용 MediaPipe 모듈 |
+| :--- | :--- | :--- |
+| hand_detector.py | 실시간 손 랜드마크 (21개) 감지 및 추적 | mp.solutions.hands |
+| face_detector.py | 실시간 얼굴 메쉬 (468개 랜드마크) 감지 및 시각화 | mp.solutions.face_mesh |
+| selfie_segmentation.py | 인물 전경/배경 분리 및 배경 블러(Blur) 처리 | mp.solutions.selfie_segmentation |
 ### ▶️ 프로그램 실행 
 방법가상 환경이 활성화된 상태에서 각 스크립트를 실행합니다.Bash# 예시: 손 감지 프로그램 실행
 python hand_detector.py
